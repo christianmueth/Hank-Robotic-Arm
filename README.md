@@ -2,11 +2,17 @@
 Very small-scale arduino project. This was a first attempt at a robotic arm, to grip things
 
 #include<Servo.h> // include server library
+
 #include <Stepper.h>
+
 Servo ser1; // create servo object to control a servo 1
+
 Servo ser2;// create servo object to control a servo 2
+
 Servo ser3;// create servo object to control a servo 3
+
 const int stepsPerRevolution = 200; //Define number of steps for the stepper motor, in its rotation
+
 Stepper myStepper(stepsPerRevolution, 10, 11, 12, 13);// Define pins of stepper motor, and assign step definition
 
 
@@ -15,11 +21,15 @@ int poser = 0; // initial position of servo
 int val; // define value of control input
 
 void setup() {
+
 myStepper.setSpeed(40);
+
 Serial.begin(9600); // Serial comm begin at 9600bps
 
 ser1.attach(5);// servo is connected at pin 5
+
 ser2.attach(3); // servo is connected at pin 3
+
 ser3.attach(2);// servo is connected at pin 2
 }
 
@@ -54,6 +64,7 @@ ser1.write(poser);// the servo will move according to position
 delay(150);//delay for the servo to get to the position
 
 }
+
 {
 
 if (val == 'e') //if value input is equals to d
@@ -79,6 +90,7 @@ ser2.write(poser);// the servo will move according to position
 delay(15);//delay for the servo to get to the position
 
 }
+
 {
 
 if (val == 'c') //if value input is equals to d
@@ -92,6 +104,7 @@ ser3.write(poser);// the servo will move according to position
 delay(15);//delay for the servo to get to the position
 
 }
+
 if (val == 'z') //if value input is equals to d
 
 {
@@ -110,6 +123,7 @@ if (val == 'n') //if value input is equals to a
 {
 
 Serial.println("clockwise");
+
 myStepper.step(stepsPerRevolution);
 
 delay(15);//delay for the stepper to get to the position
@@ -122,7 +136,9 @@ if (val == 'm') //if value input is equals to d
 {
 
 Serial.println("counterclockwise");
+
 myStepper.step(-stepsPerRevolution);
+
 delay(15);//delay for the stepper to get to the position
 
 }
