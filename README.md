@@ -1,6 +1,12 @@
 # Hank-Robotic-Arm
 Very small-scale arduino project. This was a first attempt at a robotic arm, to grip things
 
+Image:
+![20210701_143412](https://user-images.githubusercontent.com/59476460/124216078-600ee980-dac3-11eb-97fd-f9e2d5af414c.jpg)
+
+
+
+
 #include<Servo.h> // include server library
 
 #include <Stepper.h>
