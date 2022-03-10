@@ -1,8 +1,9 @@
 # Hank-Robotic-Arm
-Very small-scale arduino project. This was a first attempt at a robotic arm, to grip things
+Very small-scale arduino project. Still being upgraded/updated. This was a first attempt at a robotic arm, to grip things
 
-Image:
-![20210701_143412](https://user-images.githubusercontent.com/59476460/124216078-600ee980-dac3-11eb-97fd-f9e2d5af414c.jpg)
+Most recent image:
+![20220120_232342 (1)](https://user-images.githubusercontent.com/59476460/157579713-48997e9d-8c48-4233-8b8f-87327c6e65e6.jpg)
+
 
 
 
