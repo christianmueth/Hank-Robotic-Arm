@@ -2,7 +2,7 @@
 Very small-scale arduino project. Still being upgraded/updated. This was a first attempt at a robotic arm, to grip things
 
 Most recent image:
-![20220120_232342 (1)](https://user-images.githubusercontent.com/59476460/157579713-48997e9d-8c48-4233-8b8f-87327c6e65e6.jpg)
+![20220403_141257](https://user-images.githubusercontent.com/59476460/161455879-e43a642f-c852-40cb-adf2-b1adbc0e4d9b.jpg)
 
 
 
